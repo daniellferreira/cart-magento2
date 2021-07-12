@@ -43,4 +43,4 @@ jobs:
           COMPOSER_AUTH: ${{secrets.COMPOSER_AUTH}}
 
       - name: Run tests
-        run: bin/functional
+        run: vendor/bin/functional
