@@ -23,7 +23,8 @@
         "ext-json": "*"
     },
     "require-dev": {
-        "magento/magento2-functional-testing-framework": "2.6.7"
+        "magento/framework": ">=101.0.0",
+        "magento/magento2-functional-testing-framework": "3.5.1"
     },
     "autoload": {
         "psr-4": {
