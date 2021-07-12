@@ -43,4 +43,4 @@ jobs:
           COMPOSER_AUTH: ${{secrets.COMPOSER_AUTH}}
 
       - name: Run tests
-        run: vendor/bin/functional
+        run: composer run test-mtft

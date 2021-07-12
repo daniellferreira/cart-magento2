@@ -32,5 +32,8 @@
         "files": [
             "src/MercadoPago/Core/registration.php"
         ]
+    },
+    "scripts": {
+        "test-mtft": "functional"
     }
 }
