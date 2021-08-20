@@ -54,9 +54,13 @@ jobs:
           COMPOSER_AUTH: ${{secrets.COMPOSER_AUTH}}
         run: composer create-project --repository-url=https://repo.magento.com/ magento/project-community-edition magento2 -vvv
 
-      - name: Print Folder Structure
-        id: ls-mg2
+      - name: Print Magento Base Folder Structure
+        id: ls-base-mg2
         run: ls -la magento2
+
+      - name: Print app/code Folder Structure
+        id: ls-appcode-mg2
+        run: ls -la magento2/app/code
 
       # - name: Install dependencies
       #   env:
