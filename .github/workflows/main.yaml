@@ -31,7 +31,7 @@ jobs:
           coverage: xdebug
 
       - name: Verify PHP Installation
-      - run: php -v
+        run: php -v
 
       # - name: Get Composer cache directory
       #   id: composer-cache
