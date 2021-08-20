@@ -37,6 +37,8 @@ jobs:
       - name: Cache Composer packages
         id: composer-cache
         uses: actions/cache@v2
+        env:
+          COMPOSER_AUTH: ${{secrets.COMPOSER_AUTH}}
         with:
           path: vendor
           key: ${{ runner.os }}-php-${{ hashFiles('**/composer.lock') }}
@@ -46,6 +48,8 @@ jobs:
       - name: Install dependencies
         if: steps.composer-cache.outputs.cache-hit != 'true'
         run: composer install --prefer-dist --no-progress --no-suggest
+        env:
+          COMPOSER_AUTH: ${{secrets.COMPOSER_AUTH}}
 
 
 # jobs:
