@@ -50,6 +50,8 @@ jobs:
 
       - name: Install Magento2
         id: install-mg2
+        env:
+          COMPOSER_AUTH: ${{secrets.COMPOSER_AUTH}}
         run: composer create-project --repository-url=https://repo.magento.com/ magento/project-community-edition magento2 -vvv
 
       # - name: Install dependencies
