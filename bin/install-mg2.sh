@@ -1,8 +1,6 @@
 #!/bin/bash
 
-pwd
-ls -la
-cd ../magento2
+cd magento2
 sudo chmod -Rf 777 var/ pub/ generated/ app/etc/env.php
 php -d memory_limit=5G bin/magento indexer:reindex
 bin/magento setup:upgrade
