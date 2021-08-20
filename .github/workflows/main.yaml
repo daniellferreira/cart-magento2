@@ -58,6 +58,10 @@ jobs:
         id: ls-base-mg2
         run: ls -la magento2
 
+      - name: Print app Folder Structure
+        id: ls-app-mg2
+        run: ls -la magento2/app
+
       - name: Print app/code Folder Structure
         id: ls-appcode-mg2
         run: ls -la magento2/app/code
