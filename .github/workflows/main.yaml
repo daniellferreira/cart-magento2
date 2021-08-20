@@ -58,6 +58,10 @@ jobs:
         id: ls-base-mg2
         run: ls -la magento2
 
+      - name: Build Magento
+        id: build-magento
+        run: bash bin/install-mg2.sh
+
       - name: Print app Folder Structure
         id: ls-app-mg2
         run: ls -la magento2/app
