@@ -70,9 +70,9 @@ jobs:
         id: ls-app-mg2
         run: ls -la magento2/app
 
-      - name: Print app/code Folder Structure
+      - name: Create app/code Folder Structure
         id: ls-appcode-mg2
-        run: ls -la magento2/app/code
+        run: mkdir magento2/app/code
         
       - name: Install MP Plugin
         id: install-mp-plugin
