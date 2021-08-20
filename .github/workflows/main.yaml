@@ -66,13 +66,13 @@ jobs:
         id: build-magento
         run: bash bin/install-mg2.sh
 
-      - name: Print app Folder Structure
-        id: ls-app-mg2
-        run: ls -la magento2/app
-
       - name: Create app/code Folder Structure
         id: ls-appcode-mg2
         run: mkdir magento2/app/code
+        
+      - name: Print app Folder Structure
+        id: ls-app-mg2
+        run: ls -la magento2/app
         
       - name: Install MP Plugin
         id: install-mp-plugin
