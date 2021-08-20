@@ -1,5 +1,4 @@
-rm -rf ~/workspace/app/code/MercadoPago;
-cd &&
+cd ~/workspace/app/code &&
 curl -LO https://github.com/PluginAndPartners/cart-magento2/archive/develop.zip &&
 unzip develop.zip &&
 mv cart-magento2-develop ~/workspace/app/code/ &&
