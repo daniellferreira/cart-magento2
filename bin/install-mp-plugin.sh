@@ -3,4 +3,6 @@ pwd &&
 cd magento2 &&
 ls -la &&
 cd app &&
+ls -la &&
+cd code &&
 ls -la
