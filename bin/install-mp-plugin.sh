@@ -1,4 +1,4 @@
 echo 'CURRENT PATH:' &&
 pwd &&
 ls -la &&
-ls -la src/
+ls -la src/MercadoPago
