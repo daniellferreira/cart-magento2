@@ -1,4 +1,4 @@
 echo 'CURRENT PATH:' &&
 pwd &&
-ls -la &&
-ls -la src/MercadoPago
+cd magento2
+ls -la
