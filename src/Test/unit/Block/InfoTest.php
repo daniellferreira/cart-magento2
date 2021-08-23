@@ -1,6 +1,6 @@
 <?php
 
-namespace MercadoPago\Test\Unit\Block;
+namespace MercadoPago\Test\unit\Block;
 
 use Magento\Framework\View\Element\Template\Context;
 use Magento\Sales\Model\OrderFactory;
@@ -9,7 +9,6 @@ use \PHPUnit\Framework\TestCase;
 
 class InfoTest extends TestCase
 {
-
     private $object;
 
     protected function setUp()
