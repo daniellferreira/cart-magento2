@@ -1,6 +1,12 @@
 #!/bin/bash
 
+echo "Getting Magento 2.3.6..."
+curl -LO https://github.com/magento/magento2/archive/refs/tags/2.3.6.zip
+unzip 2.3.6.zip
+mv magento2-2.3.6 magento2
+
 cd magento2
+
 bin/magento --version
 sudo chmod -Rf 777 var/ pub/ generated/ app/etc/env.php
 # php -d memory_limit=5G bin/magento indexer:reindex

@@ -52,11 +52,9 @@ jobs:
           key: ${{ runner.os }}-composer-${{ hashFiles('**/composer.lock') }}
           restore-keys: ${{ runner.os }}-composer-
 
-      - name: Install Magento2
-        id: install-mg2
-        env:
-          COMPOSER_AUTH: ${{secrets.COMPOSER_AUTH}}
-        run: composer create-project --repository-url=https://repo.magento.com/ magento/project-community-edition=2.3.6 magento2 -vvv
+      - name: Install & Build Magento
+        id: build-magento
+        run: bash bin/install-mg2.sh
 
       - name: Print Magento Base Folder Structure
         id: ls-base-mg2
@@ -66,9 +64,6 @@ jobs:
         id: mkdir-appcode-mg2
         run: mkdir magento2/app/code
 
-      - name: Build Magento
-        id: build-magento
-        run: bash bin/install-mg2.sh
 
       - name: Print app Folder Structure
         id: ls-app-mg2
