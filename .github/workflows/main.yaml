@@ -63,7 +63,7 @@ jobs:
         run: ls -la magento2
 
       - name: Create app/code Folder Structure
-        id: ls-appcode-mg2
+        id: mkdir-appcode-mg2
         run: mkdir magento2/app/code
 
       - name: Build Magento
