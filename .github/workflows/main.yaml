@@ -80,4 +80,4 @@ jobs:
         
       - name: Run Unit Tests
         id: run-unit-test
-        run: magento2/vendor/phpunit/phpunit/phpunit magento2/app/code/MercadoPago/Test/unit/Block
+        run: magento2/vendor/phpunit/phpunit/phpunit magento2/app/code/MercadoPago/Test/unit/Block/InfoTest.php
