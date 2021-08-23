@@ -76,8 +76,8 @@ jobs:
         
       - name: Install MP Plugin
         id: install-mp-plugin
-        run: bash bin/install-mp-plugin.sh
+        run: mv src/* magento2/app/code
         
-    #  - name: Run Unit Tests
-     #   id: run-unit-test
-      #  run: vendor/phpunit/phpunit/phpunit app/code/MercadoPago/
+      - name: Run Unit Tests
+        id: run-unit-test
+        run: magento2/vendor/phpunit/phpunit/phpunit magento2/app/code/MercadoPago/
