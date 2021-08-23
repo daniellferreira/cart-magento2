@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sudo pecl install -f xdebug-2.9.8
+
 echo "Getting Magento 2.3.6..."
 curl -LO https://github.com/magento/magento2/archive/refs/tags/2.3.6-p1.zip
 unzip 2.3.6-p1.zip
