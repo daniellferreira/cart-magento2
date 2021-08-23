@@ -1,9 +1,9 @@
 #!/bin/bash
 
 echo "Getting Magento 2.3.6..."
-curl -LO https://github.com/magento/magento2/archive/refs/tags/2.3.6.zip
-unzip 2.3.6.zip
-mv magento2-2.3.6 magento2
+curl -LO https://github.com/magento/magento2/archive/refs/tags/2.3.6-p1.zip
+unzip 2.3.6-p1.zip
+mv magento2-2.3.6-p1 magento2
 
 cd magento2
 
