@@ -7,6 +7,9 @@ mv magento2-2.3.6 magento2
 
 cd magento2
 
+echo "Installing..."
+composer install
+
 bin/magento --version
 sudo chmod -Rf 777 var/ pub/ generated/ app/etc/env.php
 # php -d memory_limit=5G bin/magento indexer:reindex
